@@ -3,7 +3,7 @@
 
 #define MAX_PRODUTOS 100
 
-// Definição da estrutura Produto
+
 struct Produto {
     char nome[50];
     float preco;
@@ -16,7 +16,7 @@ int main() {
     char escolha[4];
 
     do {
-        // Cadastro de um novo produto
+        
         printf("Digite o nome do produto: ");
         scanf("%s", produtos[numProdutos].nome);
         printf("Digite o preço do produto: ");
@@ -29,7 +29,7 @@ int main() {
         scanf("%s", escolha);
     } while (strcmp(escolha, "sim") == 0);
 
-    // Exibe as informações de todos os produtos cadastrados
+    
     printf("\nProdutos cadastrados:\n");
     for (int i = 0; i < numProdutos; i++) {
         printf("Produto %d:\n", i + 1);
@@ -39,7 +39,7 @@ int main() {
         printf("\n");
     }
 
-    // Calcula o valor total em estoque
+  
     float valorTotal = 0;
     for (int i = 0; i < numProdutos; i++) {
         valorTotal += produtos[i].preco * produtos[i].quantidade;
@@ -48,4 +48,12 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+
+
+
 
