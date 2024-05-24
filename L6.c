@@ -4,14 +4,14 @@
 
 #define MAX_NOME 50
 
-// Estrutura para armazenar os dados do funcionário
+
 typedef struct {
     char nome[MAX_NOME];
     int idade;
     float salario;
 } Funcionario;
 
-// Função para adicionar um novo registro de funcionário
+
 void adicionarFuncionario(FILE *arquivo) {
     Funcionario funcionario;
 
@@ -28,7 +28,7 @@ void adicionarFuncionario(FILE *arquivo) {
     printf("Funcionário adicionado com sucesso!\n");
 }
 
-// Função para listar todos os registros de funcionários
+
 void listarFuncionarios(FILE *arquivo) {
     Funcionario funcionario;
     rewind(arquivo);
@@ -39,7 +39,7 @@ void listarFuncionarios(FILE *arquivo) {
     }
 }
 
-// Função para buscar um funcionário pelo nome
+
 void buscarFuncionario(FILE *arquivo) {
     char nomeBusca[MAX_NOME];
     Funcionario funcionario;
